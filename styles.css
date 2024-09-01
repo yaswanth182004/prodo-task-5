@@ -1,0 +1,82 @@
+/* Root variables for theme colors */
+:root {
+    --primary-color: #1e90ff; /* Dodger Blue for main elements */
+    --secondary-color: #ffffff; /* White for text and background */
+    --accent-color: #f0f0f0; /* Light gray for secondary elements */
+    --text-color: #333; /* Darker text color */
+    --button-color: #0d6efd; /* Button blue */
+    --button-hover-color: #0a58ca; /* Darker blue on hover */
+    --transition-speed: 0.3s;
+}
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#weather-container {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+}
+
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+#search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#city-input {
+    padding: 10px;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px 0 0 5px;
+    width: 200px;
+    font-size: 1em;
+    outline: none;
+}
+
+.btn {
+    padding: 10px;
+    border: none;
+    background-color: var(--button-color);
+    color: var(--secondary-color);
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color var(--transition-speed);
+}
+
+.btn:hover {
+    background-color: var(--button-hover-color);
+}
+
+/* Weather result styles */
+#weather-result {
+    margin-top: 20px;
+    font-size: 1em;
+    color: var(--text-color);
+}
+
+#weather-result h2 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+#weather-result p {
+    margin: 5px 0;
+}
